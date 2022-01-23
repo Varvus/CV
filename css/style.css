@@ -1,5 +1,5 @@
 :root {
-  --vr-bgcolor:#B8860B;
+  --vr-bgcolor:#0A66C2 ;
 }
 
 * {
@@ -15,13 +15,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter:grayscale(100%);
 }
 
 a {
   text-decoration: none!important;
   color:#444;
-  transition: all ease .4s;
+  transition: all ease .6s;
 }
 a:hover {
   color: var(--vr-bgcolor); 
@@ -36,4 +35,8 @@ a:hover {
   max-width:320px;
   margin-bottom:10px;
   opacity:.8
+}
+
+.gold {
+  color:var(--vr-bgcolor)
 }
