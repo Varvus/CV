@@ -19,6 +19,8 @@
         
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
         <style>
             @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
         </style>
@@ -39,10 +41,18 @@
 
             <div class="container-fluid bg-white">
                 <div class="row">
-                    <div class="col-12 col-md-8 p-0 d-flex justify-content-center align-items-center bg-dark position-relative">
+                    <div class="col-12 col-md-8 p-0 d-flex justify-content-center align-items-center position-relative bg-dark">
                         
                         <div class="m-0 p-0 d-inline-block w-25"> <img style="width:100%; filter:grayscale(100%) contrast(120%);" src="img/foto-perfil.jpg" alt="Victor Reyna Foto Perfil"> </div>
-                        <h1 class="sticky-top display-6 d-inline-block w-75 fw-lighter text-white text-center bg-dark" style="z-index: 2000;font-family: 'Outfit', sans-serif;">VICTOR REYNA</h1>
+
+                        <!-- PArallax JS -->
+                        <div class="p-0 m-0 s-inline-block container-fluid text-center" style="overflow:hidden;">
+                            <div data-relative-input="true" id="scene">
+                                <h1 data-depth="0.1" class="py-3 m-0 display-6 d-inline-block h-100 w-75 fw-lighter text-white text-center" style="margin-top:-50px; z-index: 2000;font-family: 'Outfit', sans-serif;">VICTOR REYNA</h1>
+                            </div>
+                        </div> 
+
+                        
                         <div class="shadow p-1 position-absolute text-black w-100" style="top:75%; z-index:11; background-color: rgba(230,230,230,.9);"> <h6 class="m-0 fw-light" style="padding-left:70px;">DESARROLLADOR WEB</h6> </div>
                     </div>
                     <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
@@ -251,4 +261,10 @@
 
 <script language="javascript">
     document.querySelector("#resume-icon").style.display = "none"
+</script>
+
+<!-- Parallax JS -->
+<script language="javascript">
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
 </script>
