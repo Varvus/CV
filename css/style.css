@@ -1,0 +1,39 @@
+:root {
+  --vr-bgcolor:#B8860B;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body {
+  background-image: linear-gradient(  to bottom, 
+                  rgba(255,255,255, .6) 0%,
+                  rgba(255,255,255, .6) 100%),
+                  url("../img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter:grayscale(100%);
+}
+
+a {
+  text-decoration: none!important;
+  color:#444;
+  transition: all ease .4s;
+}
+a:hover {
+  color: var(--vr-bgcolor); 
+}
+
+.year-label {
+  background-color:#444; 
+  color:white;
+  border:0 solid;
+  border-radius:10px;
+  width:100%;
+  max-width:320px;
+  margin-bottom:10px;
+  opacity:.8
+}
