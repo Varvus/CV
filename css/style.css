@@ -26,6 +26,25 @@ a:hover {
   color: var(--vr-bgcolor); 
 }
 
+.language {
+  background-color:var(--vr-bgcolor);
+  position:fixed; right:10px;
+  padding:3px;
+  margin:0;
+  color:white;
+  z-index:3000;
+}
+.language .slash{
+  display: inline-block;
+  color:black;
+}
+.language a {
+  color:black;
+}
+.language a:hover{
+  color:lightgray;
+}
+
 .year-label {
   background-color:#444; 
   color:white;
